@@ -1,5 +1,5 @@
 # loopCalendar
-Taro无线循环周月
+Taro无限循环周月
 
 ### 「扫描体验」
 ![gh_6b4baa38f9bf_258.jpg](https://wos.58cdn.com.cn/IjGfEdCbIlr/ishare/9366b57f-89c2-4bdf-a6a8-db95832962b4gh_6b4baa38f9bf_258.jpg)
