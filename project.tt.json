@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "loopCalendar",
+  "description": "loopCalendar",
+  "appid": "wxc8737acc1bc2d60a",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}

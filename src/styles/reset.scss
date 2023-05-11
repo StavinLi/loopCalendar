@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+html,
+body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+}
+page{
+    background: #f6f6f6;
+}
+/* ios默认文本框阴影 */
+input[type='text'],
+textarea {
+    -webkit-appearance: none;
+}
+
+/* 低版本安卓文本框层级问题 */
+input:focus {
+    -webkit-user-modify: read-write-plaintext-only;
+}
+/*  清除谷歌浏览器下的 search 叉号 */
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+view {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+html,
+body,
+a,
+input {
+    outline: 0 none;
+    border: 0;
+    text-decoration: none;
+}
+
+image {
+    display: block;
+    border: 0 none;
+}
+span {
+    display: inline;
+}
+
+li,
+input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear::after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+button {
+    outline: 0 none;
+    text-decoration: none;
+}
+button::after {
+    border: none;
+}
+.nut-input {
+    padding: 0;
+}
+.nut-placeholder,
+.textarea-placeholder {
+    color: rgba(153, 153, 153, 1);
+}
+
+.btn{
+    width: 165px;
+    height: 45px;
+    border: 0.5px solid #FFE702;
+    background: linear-gradient(101.8deg, rgba(255, 231, 2, 1) 0%,rgba(255, 231, 2, 1) 1%,rgba(255, 218, 2, 1) 99%,rgba(255, 218, 2, 1) 100%);
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 45px;
+    color: rgba(85, 85, 85, 1);
+    text-align: center;
+    &.cancel{
+        border: 0.5px solid rgba(85, 85, 85, 1);
+        background: #fff;
+    }
+}
+.actions{
+    @include flex-container(space-between);
+    padding: 0 15px;
+}
+.tab-page{
+    border-bottom: calc(80px + env(safe-area-inset-bottom)) solid #f6f6f6;
+}
